@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcii </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Calcii  Welcomes  You !!! </h1>
+    <div class="container">
+        <div class="calci">
+            <form >
+                <div class="show">
+                    <input type="text" name="open" disabled>
+                </div>
+                <div>
+                    <input type="button" class="ac but" value="AC"  onclick="open.value = ''">
+                    <input type="button" value="Del but" class="del" onclick="open.value = open.value.toString().slice (0,-1)">
+                    <input type="button" class="symbo but" value="." onclick="open.value +='.'" >
+                    <input type="button" class="symbo but" value="/" onclick="open.value +='/'">
+                </div>
+                <div>
+                    <input type="button" class="btn but" value="7" onclick="open.value +='7'">
+                    <input type="button" class="btn but" value="8" onclick="open.value +='8'">
+                    <input type="button" class="btn but" value="9" onclick="open.value +='9'">
+                    <input type="button" class="symbo but" value="*" onclick="open.value +='*'">
+                </div>
+                <div>
+                    <input type="button" class="btn but" value="4" onclick="open.value +='4'">
+                    <input type="button" class="btn but" value="5" onclick="open.value +='5'">
+                    <input type="button" class="btn but" value="6" onclick="open.value +='6'">
+                    <input type="button" class="symbo but" value="-" onclick="open.value +='-'">
+                </div>
+                <div>
+                    <input type="button" class="btn but" value="1" onclick="open.value +='1'">
+                    <input type="button" class="btn but" value="2" onclick="open.value +='2'">
+                    <input type="button" class="btn but" value="3" onclick="open.value +='3'">
+                    <input type="button" class="symbo but" value="+" onclick="open.value +='+'">
+                </div>
+                <div>
+                    <input type="button" class="special but" value="00" onclick="open.value +='00'">
+                    <input type="button" class="special but" value="0" onclick="open.value +='0'">
+                    <input type="button" class="equal but" value="=" onclick="open.value =eval(open.value)">
+                    
+                </div>
+            </form>
+
+
+
+
+        </div>
+
+    </div>
+    
+    <footer> Made By Pratyush !!! </footer>
+
+    <script> 
+        function myGeeks() { 
+            document.querySelector(".but").onclick = function() { 
+                alert("Button Clicked"); 
+            } 
+        } 
+    </script> 
+
+
+
+</body>
+</html>

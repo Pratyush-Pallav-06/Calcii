@@ -1,0 +1,122 @@
+
+h1 {
+    text-align: center;
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    color:bisque;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+      
+body{
+    height:100vh;
+    Background: #0f7e38;
+    display:grid;
+}
+.container{
+    width: 100%;
+    
+    height: 100%;
+
+    display: flex;
+}
+.calci{
+    background: #0a7e6f;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.219);
+    margin:auto;
+    margin-bottom: 0px;
+
+    border-radius: 10px;
+}
+
+.calci form input {
+    border: 1;
+    outline: 1px;
+    width: 60px;
+    height:60px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 10px;
+
+}
+.calci form input.btn{
+    background: #0c265e;
+}
+form .show{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .show input{
+    text-align: right;
+    flex: 2;
+    font-size: 45px;
+    box-shadow: none;
+    padding:20px;
+    box-sizing: border-box;
+    background: #9ba8a8; 
+    box-shadow: 0 0 10px 3px #00000033;
+    height:80px;
+    color: white;
+}
+
+form input.equal{
+width: 145px;
+background: #ab6f1b
+}
+form input.ac,form input.del{
+    background: #5f0000
+}
+
+.symbo{
+    background-color: #edae49;
+}
+.special{
+    background: #248238;
+}
+
+.calculator form input:hover {
+    box-shadow: 0px 0px 5px 3px #322d0525;
+}
+footer{
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300px;
+    color: cornsilk ;
+}
